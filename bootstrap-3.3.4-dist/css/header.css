@@ -1,0 +1,31 @@
+<?php
+
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title>header</title>
+<link rel="stylesheet" href="../shareHouse/bootstrap-3.3.4-dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="../shareHouse/bootstrap-3.3.4-dist/css/test.css">
+<link rel="stylesheet" href="../shareHouse/bootstrap-3.3.4-dist/css/testSlide.css">
+
+</head>
+<body>
+
+  <!--tittle-->
+  <header id="h">
+    <section id="header">
+      <div style="margin-top:50px">
+        <div style="text-align:center">
+          <p class="example"><font size="8">dカプセル</font></p>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  
+</body>
+</html>

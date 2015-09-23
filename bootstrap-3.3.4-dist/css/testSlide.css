@@ -1,0 +1,753 @@
+/* 表示画面 */
+#stage {
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+/*全ての写真を水平一列に格納したdiv、#photosに,
+スライドショーの基本の animation を設定*/
+#photos {
+	position: absolute;
+	width:100%;
+	-webkit-animation: imgPassToLeft0 30s infinite;
+	animation: imgPassToLeft0 30s infinite;
+}
+/*各写真の並び位置を設定
+#photo1, #photo2, #photo3, #photo4, #photo5 */
+#photo2 { left:100%; }
+#photo3 { left:200%; }
+#photo4 { left:300%; }
+#photo5 { left:400%; }
+
+.pic { position:absolute;top:0;width:100%; }
+/*写真サイズを可変に*/
+.pic img { width:100%; }
+/*送りボタン文字（＜、＞）の設定*/
+.b_left span, .b_right span {
+	position: absolute;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+	opacity:0;
+	top: 40%;
+	color:#EEE;
+}
+.b_left span {
+	left: 5%;
+}
+.b_right span {
+	left: 92%;
+}
+/*ボタン文字hover時の設定*/
+.pic:hover > label div span {
+	opacity:1;
+	color:#EEE;
+}
+.pic label div span:hover {
+	color:#f00;
+	cursor:pointer;
+}
+/* 全てのラジオボタンを非表示に */
+#back1,#back2,#back3,#back4,#back5,#next1,#next2,#next3,#next4,#next5{
+	display: none;
+}
+/* 各送りボタンクリック時のanimation設定 */
+#next1:checked ~ #photos {
+	animation: imgPassToLeft1 30s infinite;	
+	animation-delay: -4.8s;
+	-webkit-animation: imgPassToLeft1 30s infinite;	
+	-webkit-animation-delay: -4.8s;
+}
+#next2:checked ~ #photos {
+	animation: imgPassToLeft2 30s infinite;
+	animation-delay: -10.8s;
+	-webkit-animation: imgPassToLeft2 30s infinite;
+	-webkit-animation-delay: -10.8s;
+}
+#next3:checked ~ #photos {
+	animation: imgPassToLeft3 30s infinite;
+	animation-delay: -16.8s;
+	-webkit-animation: imgPassToLeft3 30s infinite;
+	-webkit-animation-delay: -16.8s;
+}
+#next4:checked ~ #photos {
+	animation: imgPassToLeft4 30s infinite;
+	animation-delay: -22.8s;
+	-webkit-animation: imgPassToLeft4 30s infinite;
+	-webkit-animation-delay: -22.8s;
+}
+#next5:checked ~ #photos {
+	animation: imgPassToLeft5 30s infinite;
+	animation-delay: -28.8s;
+	-webkit-animation: imgPassToLeft5 30s infinite;
+	-webkit-animation-delay: -28.8s;
+}
+#back1:checked ~ #photos {
+	animation: imgPassToRight1 30s infinite;
+	animation-delay: -28.8s;
+	-webkit-animation: imgPassToRight1 30s infinite;
+	-webkit-animation-delay: -28.8s;
+}
+#back2:checked ~ #photos {
+	animation: imgPassToRight2 30s infinite;
+	animation-delay: -22.8s;
+	-webkit-animation: imgPassToRight2 30s infinite;
+	-webkit-animation-delay: -22.8s;
+}
+#back3:checked ~ #photos {
+	animation: imgPassToRight3 30s infinite;
+	animation-delay: -16.8s;
+	-webkit-animation: imgPassToRight3 30s infinite;
+	-webkit-animation-delay: -16.8s;
+}
+#back4:checked ~ #photos {
+	animation: imgPassToRight4 30s infinite;
+	animation-delay: -10.8s;
+	-webkit-animation: imgPassToRight4 30s infinite;
+	-webkit-animation-delay: -10.8s;
+}
+#back5:checked ~ #photos {
+	animation: imgPassToRight5 30s infinite;
+	animation-delay: -4.8s;
+	-webkit-animation: imgPassToRight5 30s infinite;
+	-webkit-animation-delay: -4.8s;
+}
+/* animation設定 */
+@keyframes imgPassToLeft0 {
+	0%  {   left:   0%;opacity:0;}
+	4%  {   left:   0%;opacity:1;}
+	16% {   left:   0%;opacity:1;}
+	19.99%{ left:   0%;opacity:0;}
+	20% {   left:-100%;opacity:0;}
+	24% {   left:-100%;opacity:1;} 
+	36% {   left:-100%;opacity:1;}
+	39.99%{ left:-100%;opacity:0;}
+	40% {   left:-200%;opacity:0;}
+	44% {   left:-200%;opacity:1;}
+	56% {   left:-200%;opacity:1;}
+	59.99%{ left:-200%;opacity:0;}
+	60% {   left:-300%;opacity:0;}
+	64% {   left:-300%;opacity:1;}
+	76% {   left:-300%;opacity:1;} 
+	79.99%{ left:-300%;opacity:0;}
+	80% {   left:-400%;opacity:0;}
+	84% {   left:-400%;opacity:1;}
+	96% {   left:-400%;opacity:1;}
+	99.99%{ left:-400%;opacity:0;}
+	100% {  left:   0%;opacity:0;}
+}
+@keyframes imgPassToLeft1 {
+	0%  {   left:   0%;opacity:0;}
+	4%  {   left:   0%;opacity:1;}
+	16% {   left:   0%;opacity:1;}
+	19.99%{ left:   0%;opacity:0;}
+	20% {   left:-100%;opacity:0;}
+	24% {   left:-100%;opacity:1;} 
+	36% {   left:-100%;opacity:1;}
+	39.99%{ left:-100%;opacity:0;}
+	40% {   left:-200%;opacity:0;}
+	44% {   left:-200%;opacity:1;}
+	56% {   left:-200%;opacity:1;}
+	59.99%{ left:-200%;opacity:0;}
+	60% {   left:-300%;opacity:0;}
+	64% {   left:-300%;opacity:1;}
+	76% {   left:-300%;opacity:1;} 
+	79.99%{ left:-300%;opacity:0;}
+	80% {   left:-400%;opacity:0;}
+	84% {   left:-400%;opacity:1;}
+	96% {   left:-400%;opacity:1;}
+	99.99%{ left:-400%;opacity:0;}
+	100% {  left:   0%;opacity:0;}
+}
+@keyframes imgPassToLeft2 {
+	0%  {   left:   0%;opacity:0;}
+	4%  {   left:   0%;opacity:1;}
+	16% {   left:   0%;opacity:1;}
+	19.99%{ left:   0%;opacity:0;}
+	20% {   left:-100%;opacity:0;}
+	24% {   left:-100%;opacity:1;} 
+	36% {   left:-100%;opacity:1;}
+	39.99%{ left:-100%;opacity:0;}
+	40% {   left:-200%;opacity:0;}
+	44% {   left:-200%;opacity:1;}
+	56% {   left:-200%;opacity:1;}
+	59.99%{ left:-200%;opacity:0;}
+	60% {   left:-300%;opacity:0;}
+	64% {   left:-300%;opacity:1;}
+	76% {   left:-300%;opacity:1;} 
+	79.99%{ left:-300%;opacity:0;}
+	80% {   left:-400%;opacity:0;}
+	84% {   left:-400%;opacity:1;}
+	96% {   left:-400%;opacity:1;}
+	99.99%{ left:-400%;opacity:0;}
+	100% {  left:   0%;opacity:0;}
+}
+@keyframes imgPassToLeft3 {
+	0%  {   left:   0%;opacity:0;}
+	4%  {   left:   0%;opacity:1;}
+	16% {   left:   0%;opacity:1;}
+	19.99%{ left:   0%;opacity:0;}
+	20% {   left:-100%;opacity:0;}
+	24% {   left:-100%;opacity:1;} 
+	36% {   left:-100%;opacity:1;}
+	39.99%{ left:-100%;opacity:0;}
+	40% {   left:-200%;opacity:0;}
+	44% {   left:-200%;opacity:1;}
+	56% {   left:-200%;opacity:1;}
+	59.99%{ left:-200%;opacity:0;}
+	60% {   left:-300%;opacity:0;}
+	64% {   left:-300%;opacity:1;}
+	76% {   left:-300%;opacity:1;} 
+	79.99%{ left:-300%;opacity:0;}
+	80% {   left:-400%;opacity:0;}
+	84% {   left:-400%;opacity:1;}
+	96% {   left:-400%;opacity:1;}
+	99.99%{ left:-400%;opacity:0;}
+	100% {  left:   0%;opacity:0;}
+}
+@keyframes imgPassToLeft4 {
+	0%  {   left:   0%;opacity:0;}
+	4%  {   left:   0%;opacity:1;}
+	16% {   left:   0%;opacity:1;}
+	19.99%{ left:   0%;opacity:0;}
+	20% {   left:-100%;opacity:0;}
+	24% {   left:-100%;opacity:1;} 
+	36% {   left:-100%;opacity:1;}
+	39.99%{ left:-100%;opacity:0;}
+	40% {   left:-200%;opacity:0;}
+	44% {   left:-200%;opacity:1;}
+	56% {   left:-200%;opacity:1;}
+	59.99%{ left:-200%;opacity:0;}
+	60% {   left:-300%;opacity:0;}
+	64% {   left:-300%;opacity:1;}
+	76% {   left:-300%;opacity:1;} 
+	79.99%{ left:-300%;opacity:0;}
+	80% {   left:-400%;opacity:0;}
+	84% {   left:-400%;opacity:1;}
+	96% {   left:-400%;opacity:1;}
+	99.99%{ left:-400%;opacity:0;}
+	100% {  left:   0%;opacity:0;}
+}
+@keyframes imgPassToLeft5 {
+	0%  {   left:   0%;opacity:0;}
+	4%  {   left:   0%;opacity:1;}
+	16% {   left:   0%;opacity:1;}
+	19.99%{ left:   0%;opacity:0;}
+	20% {   left:-100%;opacity:0;}
+	24% {   left:-100%;opacity:1;} 
+	36% {   left:-100%;opacity:1;}
+	39.99%{ left:-100%;opacity:0;}
+	40% {   left:-200%;opacity:0;}
+	44% {   left:-200%;opacity:1;}
+	56% {   left:-200%;opacity:1;}
+	59.99%{ left:-200%;opacity:0;}
+	60% {   left:-300%;opacity:0;}
+	64% {   left:-300%;opacity:1;}
+	76% {   left:-300%;opacity:1;} 
+	79.99%{ left:-300%;opacity:0;}
+	80% {   left:-400%;opacity:0;}
+	84% {   left:-400%;opacity:1;}
+	96% {   left:-400%;opacity:1;}
+	99.99%{ left:-400%;opacity:0;}
+	100% {  left:   0%;opacity:0;}
+}
+@keyframes imgPassToRight1 {
+	0%  {   left:-400%;opacity:0;}
+	4%  {   left:-400%;opacity:1;}
+	16% {   left:-400%;opacity:1;}
+	19.99%{ left:-400%;opacity:0;}
+	20% {   left:-300%;opacity:0;}
+	24% {   left:-300%;opacity:1;} 
+	36% {   left:-300%;opacity:1;}
+	39.99%{ left:-300%;opacity:0;}
+	40% {   left:-200%;opacity:0;}
+	44% {   left:-200%;opacity:1;}
+	56% {   left:-200%;opacity:1;}
+	59.99%{ left:-200%;opacity:0;}
+	60% {   left:-100%;opacity:0;}
+	64% {   left:-100%;opacity:1;}
+	76% {   left:-100%;opacity:1;} 
+	79.99%{ left:-100%;opacity:0;}
+	80% {   left:   0%;opacity:0;}
+	84% {   left:   0%;opacity:1;}
+	96% {   left:   0%;opacity:1;}
+	99.99%{ left:   0%;opacity:0;}
+	100% {  left:-400%;opacity:0;}
+}
+@keyframes imgPassToRight2 {
+	0%  {   left:-400%;opacity:0;}
+	4%  {   left:-400%;opacity:1;}
+	16% {   left:-400%;opacity:1;}
+	19.99%{ left:-400%;opacity:0;}
+	20% {   left:-300%;opacity:0;}
+	24% {   left:-300%;opacity:1;} 
+	36% {   left:-300%;opacity:1;}
+	39.99%{ left:-300%;opacity:0;}
+	40% {   left:-200%;opacity:0;}
+	44% {   left:-200%;opacity:1;}
+	56% {   left:-200%;opacity:1;}
+	59.99%{ left:-200%;opacity:0;}
+	60% {   left:-100%;opacity:0;}
+	64% {   left:-100%;opacity:1;}
+	76% {   left:-100%;opacity:1;} 
+	79.99%{ left:-100%;opacity:0;}
+	80% {   left:   0%;opacity:0;}
+	84% {   left:   0%;opacity:1;}
+	96% {   left:   0%;opacity:1;}
+	99.99%{ left:   0%;opacity:0;}
+	100% {  left:-400%;opacity:0;}
+}
+@keyframes imgPassToRight3 {
+	0%  {   left:-400%;opacity:0;}
+	4%  {   left:-400%;opacity:1;}
+	16% {   left:-400%;opacity:1;}
+	19.99%{ left:-400%;opacity:0;}
+	20% {   left:-300%;opacity:0;}
+	24% {   left:-300%;opacity:1;} 
+	36% {   left:-300%;opacity:1;}
+	39.99%{ left:-300%;opacity:0;}
+	40% {   left:-200%;opacity:0;}
+	44% {   left:-200%;opacity:1;}
+	56% {   left:-200%;opacity:1;}
+	59.99%{ left:-200%;opacity:0;}
+	60% {   left:-100%;opacity:0;}
+	64% {   left:-100%;opacity:1;}
+	76% {   left:-100%;opacity:1;} 
+	79.99%{ left:-100%;opacity:0;}
+	80% {   left:   0%;opacity:0;}
+	84% {   left:   0%;opacity:1;}
+	96% {   left:   0%;opacity:1;}
+	99.99%{ left:   0%;opacity:0;}
+	100% {  left:-400%;opacity:0;}
+}
+@keyframes imgPassToRight4 {
+	0%  {   left:-400%;opacity:0;}
+	4%  {   left:-400%;opacity:1;}
+	16% {   left:-400%;opacity:1;}
+	19.99%{ left:-400%;opacity:0;}
+	20% {   left:-300%;opacity:0;}
+	24% {   left:-300%;opacity:1;} 
+	36% {   left:-300%;opacity:1;}
+	39.99%{ left:-300%;opacity:0;}
+	40% {   left:-200%;opacity:0;}
+	44% {   left:-200%;opacity:1;}
+	56% {   left:-200%;opacity:1;}
+	59.99%{ left:-200%;opacity:0;}
+	60% {   left:-100%;opacity:0;}
+	64% {   left:-100%;opacity:1;}
+	76% {   left:-100%;opacity:1;} 
+	79.99%{ left:-100%;opacity:0;}
+	80% {   left:   0%;opacity:0;}
+	84% {   left:   0%;opacity:1;}
+	96% {   left:   0%;opacity:1;}
+	99.99%{ left:   0%;opacity:0;}
+	100% {  left:-400%;opacity:0;}
+}
+@keyframes imgPassToRight5 {
+	0%  {   left:-400%;opacity:0;}
+	4%  {   left:-400%;opacity:1;}
+	16% {   left:-400%;opacity:1;}
+	19.99%{ left:-400%;opacity:0;}
+	20% {   left:-300%;opacity:0;}
+	24% {   left:-300%;opacity:1;} 
+	36% {   left:-300%;opacity:1;}
+	39.99%{ left:-300%;opacity:0;}
+	40% {   left:-200%;opacity:0;}
+	44% {   left:-200%;opacity:1;}
+	56% {   left:-200%;opacity:1;}
+	59.99%{ left:-200%;opacity:0;}
+	60% {   left:-100%;opacity:0;}
+	64% {   left:-100%;opacity:1;}
+	76% {   left:-100%;opacity:1;} 
+	79.99%{ left:-100%;opacity:0;}
+	80% {   left:   0%;opacity:0;}
+	84% {   left:   0%;opacity:1;}
+	96% {   left:   0%;opacity:1;}
+	99.99%{ left:   0%;opacity:0;}
+	100% {  left:-400%;opacity:0;}
+}
+
+@-webkit-keyframes imgPassToLeft0 {
+	0%  {   left:   0%;opacity:0;}
+	4%  {   left:   0%;opacity:1;}
+	16% {   left:   0%;opacity:1;}
+	19.99%{ left:   0%;opacity:0;}
+	20% {   left:-100%;opacity:0;}
+	24% {   left:-100%;opacity:1;} 
+	36% {   left:-100%;opacity:1;}
+	39.99%{ left:-100%;opacity:0;}
+	40% {   left:-200%;opacity:0;}
+	44% {   left:-200%;opacity:1;}
+	56% {   left:-200%;opacity:1;}
+	59.99%{ left:-200%;opacity:0;}
+	60% {   left:-300%;opacity:0;}
+	64% {   left:-300%;opacity:1;}
+	76% {   left:-300%;opacity:1;} 
+	79.99%{ left:-300%;opacity:0;}
+	80% {   left:-400%;opacity:0;}
+	84% {   left:-400%;opacity:1;}
+	96% {   left:-400%;opacity:1;}
+	99.99%{ left:-400%;opacity:0;}
+	100% {  left:   0%;opacity:0;}
+}
+@-webkit-keyframes imgPassToLeft1 {
+	0%  {   left:   0%;opacity:0;}
+	4%  {   left:   0%;opacity:1;}
+	16% {   left:   0%;opacity:1;}
+	19.99%{ left:   0%;opacity:0;}
+	20% {   left:-100%;opacity:0;}
+	24% {   left:-100%;opacity:1;} 
+	36% {   left:-100%;opacity:1;}
+	39.99%{ left:-100%;opacity:0;}
+	40% {   left:-200%;opacity:0;}
+	44% {   left:-200%;opacity:1;}
+	56% {   left:-200%;opacity:1;}
+	59.99%{ left:-200%;opacity:0;}
+	60% {   left:-300%;opacity:0;}
+	64% {   left:-300%;opacity:1;}
+	76% {   left:-300%;opacity:1;} 
+	79.99%{ left:-300%;opacity:0;}
+	80% {   left:-400%;opacity:0;}
+	84% {   left:-400%;opacity:1;}
+	96% {   left:-400%;opacity:1;}
+	99.99%{ left:-400%;opacity:0;}
+	100% {  left:   0%;opacity:0;}
+}
+@-webkit-keyframes imgPassToLeft2 {
+	0%  {   left:   0%;opacity:0;}
+	4%  {   left:   0%;opacity:1;}
+	16% {   left:   0%;opacity:1;}
+	19.99%{ left:   0%;opacity:0;}
+	20% {   left:-100%;opacity:0;}
+	24% {   left:-100%;opacity:1;} 
+	36% {   left:-100%;opacity:1;}
+	39.99%{ left:-100%;opacity:0;}
+	40% {   left:-200%;opacity:0;}
+	44% {   left:-200%;opacity:1;}
+	56% {   left:-200%;opacity:1;}
+	59.99%{ left:-200%;opacity:0;}
+	60% {   left:-300%;opacity:0;}
+	64% {   left:-300%;opacity:1;}
+	76% {   left:-300%;opacity:1;} 
+	79.99%{ left:-300%;opacity:0;}
+	80% {   left:-400%;opacity:0;}
+	84% {   left:-400%;opacity:1;}
+	96% {   left:-400%;opacity:1;}
+	99.99%{ left:-400%;opacity:0;}
+	100% {  left:   0%;opacity:0;}
+}
+@-webkit-keyframes imgPassToLeft3 {
+	0%  {   left:   0%;opacity:0;}
+	4%  {   left:   0%;opacity:1;}
+	16% {   left:   0%;opacity:1;}
+	19.99%{ left:   0%;opacity:0;}
+	20% {   left:-100%;opacity:0;}
+	24% {   left:-100%;opacity:1;} 
+	36% {   left:-100%;opacity:1;}
+	39.99%{ left:-100%;opacity:0;}
+	40% {   left:-200%;opacity:0;}
+	44% {   left:-200%;opacity:1;}
+	56% {   left:-200%;opacity:1;}
+	59.99%{ left:-200%;opacity:0;}
+	60% {   left:-300%;opacity:0;}
+	64% {   left:-300%;opacity:1;}
+	76% {   left:-300%;opacity:1;} 
+	79.99%{ left:-300%;opacity:0;}
+	80% {   left:-400%;opacity:0;}
+	84% {   left:-400%;opacity:1;}
+	96% {   left:-400%;opacity:1;}
+	99.99%{ left:-400%;opacity:0;}
+	100% {  left:   0%;opacity:0;}
+}
+@-webkit-keyframes imgPassToLeft4 {
+	0%  {   left:   0%;opacity:0;}
+	4%  {   left:   0%;opacity:1;}
+	16% {   left:   0%;opacity:1;}
+	19.99%{ left:   0%;opacity:0;}
+	20% {   left:-100%;opacity:0;}
+	24% {   left:-100%;opacity:1;} 
+	36% {   left:-100%;opacity:1;}
+	39.99%{ left:-100%;opacity:0;}
+	40% {   left:-200%;opacity:0;}
+	44% {   left:-200%;opacity:1;}
+	56% {   left:-200%;opacity:1;}
+	59.99%{ left:-200%;opacity:0;}
+	60% {   left:-300%;opacity:0;}
+	64% {   left:-300%;opacity:1;}
+	76% {   left:-300%;opacity:1;} 
+	79.99%{ left:-300%;opacity:0;}
+	80% {   left:-400%;opacity:0;}
+	84% {   left:-400%;opacity:1;}
+	96% {   left:-400%;opacity:1;}
+	99.99%{ left:-400%;opacity:0;}
+	100% {  left:   0%;opacity:0;}
+}
+@-webkit-keyframes imgPassToLeft5 {
+	0%  {   left:   0%;opacity:0;}
+	4%  {   left:   0%;opacity:1;}
+	16% {   left:   0%;opacity:1;}
+	19.99%{ left:   0%;opacity:0;}
+	20% {   left:-100%;opacity:0;}
+	24% {   left:-100%;opacity:1;} 
+	36% {   left:-100%;opacity:1;}
+	39.99%{ left:-100%;opacity:0;}
+	40% {   left:-200%;opacity:0;}
+	44% {   left:-200%;opacity:1;}
+	56% {   left:-200%;opacity:1;}
+	59.99%{ left:-200%;opacity:0;}
+	60% {   left:-300%;opacity:0;}
+	64% {   left:-300%;opacity:1;}
+	76% {   left:-300%;opacity:1;} 
+	79.99%{ left:-300%;opacity:0;}
+	80% {   left:-400%;opacity:0;}
+	84% {   left:-400%;opacity:1;}
+	96% {   left:-400%;opacity:1;}
+	99.99%{ left:-400%;opacity:0;}
+	100% {  left:   0%;opacity:0;}
+}
+@-webkit-keyframes imgPassToRight1 {
+	0%  {   left:-400%;opacity:0;}
+	4%  {   left:-400%;opacity:1;}
+	16% {   left:-400%;opacity:1;}
+	19.99%{ left:-400%;opacity:0;}
+	20% {   left:-300%;opacity:0;}
+	24% {   left:-300%;opacity:1;} 
+	36% {   left:-300%;opacity:1;}
+	39.99%{ left:-300%;opacity:0;}
+	40% {   left:-200%;opacity:0;}
+	44% {   left:-200%;opacity:1;}
+	56% {   left:-200%;opacity:1;}
+	59.99%{ left:-200%;opacity:0;}
+	60% {   left:-100%;opacity:0;}
+	64% {   left:-100%;opacity:1;}
+	76% {   left:-100%;opacity:1;} 
+	79.99%{ left:-100%;opacity:0;}
+	80% {   left:   0%;opacity:0;}
+	84% {   left:   0%;opacity:1;}
+	96% {   left:   0%;opacity:1;}
+	99.99%{ left:   0%;opacity:0;}
+	100% {  left:-400%;opacity:0;}
+}
+@-webkit-keyframes imgPassToRight2 {
+	0%  {   left:-400%;opacity:0;}
+	4%  {   left:-400%;opacity:1;}
+	16% {   left:-400%;opacity:1;}
+	19.99%{ left:-400%;opacity:0;}
+	20% {   left:-300%;opacity:0;}
+	24% {   left:-300%;opacity:1;} 
+	36% {   left:-300%;opacity:1;}
+	39.99%{ left:-300%;opacity:0;}
+	40% {   left:-200%;opacity:0;}
+	44% {   left:-200%;opacity:1;}
+	56% {   left:-200%;opacity:1;}
+	59.99%{ left:-200%;opacity:0;}
+	60% {   left:-100%;opacity:0;}
+	64% {   left:-100%;opacity:1;}
+	76% {   left:-100%;opacity:1;} 
+	79.99%{ left:-100%;opacity:0;}
+	80% {   left:   0%;opacity:0;}
+	84% {   left:   0%;opacity:1;}
+	96% {   left:   0%;opacity:1;}
+	99.99%{ left:   0%;opacity:0;}
+	100% {  left:-400%;opacity:0;}
+}
+@-webkit-keyframes imgPassToRight3 {
+	0%  {   left:-400%;opacity:0;}
+	4%  {   left:-400%;opacity:1;}
+	16% {   left:-400%;opacity:1;}
+	19.99%{ left:-400%;opacity:0;}
+	20% {   left:-300%;opacity:0;}
+	24% {   left:-300%;opacity:1;} 
+	36% {   left:-300%;opacity:1;}
+	39.99%{ left:-300%;opacity:0;}
+	40% {   left:-200%;opacity:0;}
+	44% {   left:-200%;opacity:1;}
+	56% {   left:-200%;opacity:1;}
+	59.99%{ left:-200%;opacity:0;}
+	60% {   left:-100%;opacity:0;}
+	64% {   left:-100%;opacity:1;}
+	76% {   left:-100%;opacity:1;} 
+	79.99%{ left:-100%;opacity:0;}
+	80% {   left:   0%;opacity:0;}
+	84% {   left:   0%;opacity:1;}
+	96% {   left:   0%;opacity:1;}
+	99.99%{ left:   0%;opacity:0;}
+	100% {  left:-400%;opacity:0;}
+}
+@-webkit-keyframes imgPassToRight4 {
+	0%  {   left:-400%;opacity:0;}
+	4%  {   left:-400%;opacity:1;}
+	16% {   left:-400%;opacity:1;}
+	19.99%{ left:-400%;opacity:0;}
+	20% {   left:-300%;opacity:0;}
+	24% {   left:-300%;opacity:1;} 
+	36% {   left:-300%;opacity:1;}
+	39.99%{ left:-300%;opacity:0;}
+	40% {   left:-200%;opacity:0;}
+	44% {   left:-200%;opacity:1;}
+	56% {   left:-200%;opacity:1;}
+	59.99%{ left:-200%;opacity:0;}
+	60% {   left:-100%;opacity:0;}
+	64% {   left:-100%;opacity:1;}
+	76% {   left:-100%;opacity:1;} 
+	79.99%{ left:-100%;opacity:0;}
+	80% {   left:   0%;opacity:0;}
+	84% {   left:   0%;opacity:1;}
+	96% {   left:   0%;opacity:1;}
+	99.99%{ left:   0%;opacity:0;}
+	100% {  left:-400%;opacity:0;}
+}
+@-webkit-keyframes imgPassToRight5 {
+	0%  {   left:-400%;opacity:0;}
+	4%  {   left:-400%;opacity:1;}
+	16% {   left:-400%;opacity:1;}
+	19.99%{ left:-400%;opacity:0;}
+	20% {   left:-300%;opacity:0;}
+	24% {   left:-300%;opacity:1;} 
+	36% {   left:-300%;opacity:1;}
+	39.99%{ left:-300%;opacity:0;}
+	40% {   left:-200%;opacity:0;}
+	44% {   left:-200%;opacity:1;}
+	56% {   left:-200%;opacity:1;}
+	59.99%{ left:-200%;opacity:0;}
+	60% {   left:-100%;opacity:0;}
+	64% {   left:-100%;opacity:1;}
+	76% {   left:-100%;opacity:1;} 
+	79.99%{ left:-100%;opacity:0;}
+	80% {   left:   0%;opacity:0;}
+	84% {   left:   0%;opacity:1;}
+	96% {   left:   0%;opacity:1;}
+	99.99%{ left:   0%;opacity:0;}
+	100% {  left:-400%;opacity:0;}
+}
+
+#images{
+    padding-top:50px;
+    margin-top:50px;
+    height:auto;
+    padding-bottom:10px;
+    margin-bottom:80px;
+}
+
+.image img{
+    width:200px;
+	height:200px;
+	border-radius: 400px;
+	border:5px solid #fff;
+	box-shadow: 0px 0px 10px #ccc,
+	inset 0px 0px 10px rgba(0, 0, 0, 0.8);
+	background: url(thumb.png) center center;
+}
+
+img.Img1 {
+	position: relative;
+	width: 500px;
+	height:500px;
+	top:50px;
+	left:200px;
+}
+
+img.Img2 {
+	position: relative;
+	width: 500px;
+	height:250px;
+	top:50px;
+	left:800px;
+}
+
+img.Img3 {
+	position: relative;
+	width: 500px;
+	height:500px;
+	top:50px;
+	left:800px;
+}
+
+figure.gazo-box {
+	float: left;
+	padding-right: 20px;
+}
+
+.map {
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+	top: 80px;
+	text-align: center;
+}
+
+a:hover img.overwhite{
+    cursor:pointer;
+    filter: alpha(opacity=60);        /* ie lt 8 */
+    -ms-filter: "alpha(opacity=60)";  /* ie 8 */
+    - MOZ-opacity:0.6;                 /* FF lt 1.5, Netscape */
+    -khtml-opacity: 0.6;              /* Safari 1.x */
+    opacity:0.6;
+    zoom:1;
+}
+
+
+
+
+
+
+/* ContentsArea
+-------------------------- */
+/*#contents {
+    margin: 0 auto;
+    width: 450px;
+    text-align: left;
+    position: relative;
+}*/
+ 
+/*#contents ul {
+    width: 150px;
+}*/
+ 
+/*#contents ul li {
+    margin: 10px 10px;
+    width: 200px;
+    height: 150px;
+    text-align: center;
+    float: left;
+    display: inline;
+}*/
+ 
+/*#contents ul li img {
+    -webkit-transform:scale(1);
+    position: absolute;
+    opacity: 1;*/                 /*--最初の画像濃度--*/
+ /*   z-index: 10;
+}*/
+ 
+ 
+/* ClearFixElements
+-------------------------- */
+#contents ul:after {
+    content: "";
+    height: 0;
+    clear: both;
+    display: block;
+    visibility: hidden;
+}
+ 
+ 
+/* CSS3 HoverAnimation
+-------------------------- */
+@-webkit-keyframes hoverSpread {
+    0% {-webkit-transform:scale(1);opacity: 1.7;}
+    100% {-webkit-transform:scale(1.1);opacity: 0.7;}  /*--アニメーションの最初のサイズ--*/
+}
+ 
+#contents ul li img:hover {
+    -webkit-animation-name: hoverSpread;
+    -webkit-animation-duration: 0.7s;        /*--アニメーションの動作時間--*/
+    -webkit-animation-iteration-count: 1;    /*--アニメーションの動作回数--*/
+ 
+    -webkit-transform: scale(1.1);           /*--アニメーションの最終サイズ--*/
+    -webkit-box-shadow: 0 0 10px #000;       /*--画像のバックカラーの範囲(黒)--*/
+    opacity: 0.7;                            /*--画像最終濃度--*/
+    z-index: 20;
+}
