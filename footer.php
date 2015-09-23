@@ -10,7 +10,7 @@
 
 <!--footer-->
     <footer>
-      <div style="margin-top:700px">
+      <div style="margin-top:100px">
         <p class="footerLetter">
           <br></br>
           <br></br> 

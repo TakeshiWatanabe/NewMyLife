@@ -46,44 +46,13 @@ include("titleAndButton.php");
           <li>language : Japanses, English</li>
           <li>Programming language : PHP, HTML, CSS, SQL, Objective-C</li>
           <li>Experience work : Watanabe architecture</li>
-          <br />
-          <li>I like to think things</li>
+          <li>Like : music, travel, snowboard, alcohol drinks, gym, cycling and party</li>
           <li></li>
 
         </font>
       </div>
     </div>
   </div>
-
-
-  <div style="margin-top:50px">
-	  <figure class="gazo-box">
-	    <div style="margin-left:210px">
-	      <div style="margin-top:20px">
-	        <img src="http://www.rubeusu-trend.com/wp-content/uploads/2013/10/68f8697c8c949b11fe950d5d55347409.jpg" width="500" height="500">
-	        <figcaption>
-	          <div style="margin-left:0px"><font size="4">キッチン　kitchen</font></div>
-	        </figcaption>
-	      </div>
-	    </div>
-	  </figure>
-	  <figure class="gazo-box">
-	    <div style="margin-top:20px">
-	      <img src="http://www.hituji.jp/img/comret/kanagawa/yokohama/shareplace-higashi-kanagawa/017.jpg" width="500" height="228">
-	      <figcaption>
-	        <div style="margin-left:0px"><font size="4">テラス１　terrace1</font></div>
-	      </figcaption>
-	    </div>
-	  </figure>
-	  <figure class="gazo-box">
-	    <div style="margin-top:20px">
-	      <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQlQQkp2XLU65Nf-gMUMtjNHdKNWhbgCJrMHfpfW1Q80h3qDrot" width="500" height="228">
-	      <figcaption>
-	        <div style="margin-left:0px"><font size="4">テラス２　terrace2</font></div>
-	      </figcaption>
-	    </div>
-	  </figure>
-	</div>
 
 	<?php
 	// footer

@@ -31,7 +31,9 @@ include("titleAndButton.php");
     </div>
     <div style="margin-top:150px">
       <div class="col-md-4 col-md-offset-2 well">
-        <li>I like music</li>
+        <h2>Like music</h2>
+        <p>HIP HOP, R&B, Reggae, EDM, jazz, J-pop, Hawaiian Music, K-pop, Rock</p>
+        <p>I have been to open-air event ITAL STYLEE(Odaiba), Ultra Japan(Odaiba), FUJI ROCK FESTIVAL(Niigata), ZUSHI FES(Zushi), Sinulog Invasion(Cebu in Philippines), SUMMER SUNSCREAM(Cebu in Philippines).</p>
       </div>
     </div>
   </div>
@@ -47,7 +49,8 @@ include("titleAndButton.php");
     </div>
     <div style="margin-top:150px">
       <div class="col-md-4 col-md-offset-2 well">
-        <li>I like travel</li>
+        <h2>Like travel</h2>
+        <p>I have been to country Cebu(Philippines), Guam(America), Sun Francsico(America), Sun Diego(America), Los Angeles(America), Las Vegas(America).</p>
       </div>
     </div>
   </div>
@@ -63,7 +66,9 @@ include("titleAndButton.php");
     </div>
     <div style="margin-top:150px">
       <div class="col-md-4 col-md-offset-2 well">
-        <li>I like snowboard</li>
+        <h2>Like snowboard</h2>
+        <p>I started snowboard on 12 years old</p>
+        <p>I have been to place GALA Yuzawa(Niigata), IshiutiMruyama(Niigata), Naeba(Niigata), Kawaba(Gunma), Kiroro(Hokkaido), Niseko(Hokkaido).</p>
       </div>
     </div>
   </div>
@@ -79,7 +84,8 @@ include("titleAndButton.php");
     </div>
     <div style="margin-top:150px">
       <div class="col-md-4 col-md-offset-2 well">
-        <li>I like drink</li>
+        <h2>Like drink</h2>
+        <p>I have been to drink place Kiyose, Tokorozawa, Tatikawa, Ikebukuro, Nihonbashi, Shibuya, Shinjyuku, Aoyama, Roppongi, Azabu, Sangenjyaya, Sasazuka.</p>
       </div>
     </div>
   </div>
@@ -95,7 +101,9 @@ include("titleAndButton.php");
     </div>
     <div style="margin-top:150px">
       <div class="col-md-4 col-md-offset-2 well">
-        <li>I like gym</li>
+        <h2>Like gym</h2>
+        <p>My training are front, back and leg on two days a week.</p>
+        <p>Sometimes I go to Yoga.</p>
       </div>
     </div>
   </div>
@@ -111,28 +119,12 @@ include("titleAndButton.php");
     </div>
     <div style="margin-top:150px">
       <div class="col-md-4 col-md-offset-2 well">
-        <li>I like cycling</li>
+        <h2>Like cycling</h2>
+        <p>I have been to cycling Tokyo, Chiba, Kanagawa, Totigi, Gunma, Niigata, Cebu in Philippines, Los Angeles in America.</p>
       </div>
     </div>
   </div>
   
-  <div class="row">
-    <div style="margin-top:40px">
-      <div class="col-md-2 col-md-offset-2">
-        <img src="hobbyImg/ageha.jpg" width="400" height="400">
-        <figcaption>
-          <div style="margin-left:0px"><font size="4">Shinkiba ageha</font></div>
-        </figcaption>
-      </div>
-    </div>
-    <div style="margin-top:150px">
-      <div class="col-md-4 col-md-offset-2 well">
-        <li>I like party</li>
-      </div>
-    </div>
-  </div>
-
-
   <?php
   // footer
   include("footer.php");

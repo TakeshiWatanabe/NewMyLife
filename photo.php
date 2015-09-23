@@ -109,30 +109,11 @@ include("titleAndButton.php");
 	</ul>
 
 
-  <footer>
-      <div style="margin-top:100px">
-        <p class="footerLetter">
-          <br></br>
-          <br></br>
-          <font size="4">企業情報</font>
-        </p>
-        <div style="margin-left:400px">
-          <form action="" method="POST">
-            <p><font size="4" color="#000000">Name</font></p>
-          <input type="text" name="name" id="name" maxlength="20" value="" required><br><br/>
-            <p><font size="4" color="#000000">Question</font></p><textarea name="comment" col="40" row="5"></textarea><br><br/>
-            <p><font size="4" color="#000000"><span style="margin-right: 4em;"></span><input type="submit" value="OK"></font></p>
-          </form>
-        </div>
-        <div style="margin-left:800px">
-          <font size="3">
-            <a>企業理念</a></br>
-            <a>(タイトル)とは</a></br>
-            <a>利用規約とプライバシーポリシー<a/>
-          </font>
-        </div>
-      </div>
-    </footer>
+  	<?php
+	// footer
+	include("footer.php");
+
+	?>
 
 
 </body>
