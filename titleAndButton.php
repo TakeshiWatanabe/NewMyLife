@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-<title>button</title>
+<title>NewMyLife</title>
 <link rel="stylesheet" href="../NewMyLife/bootstrap-3.3.4-dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="../NewMyLife/bootstrap-3.3.4-dist/css/test.css">
 </head>

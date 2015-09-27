@@ -85,7 +85,7 @@ include("titleAndButton.php");
     <div style="margin-top:150px">
       <div class="col-md-4 col-md-offset-2 well">
         <h2>Like drink</h2>
-        <p>I have been to drink place Kiyose, Tokorozawa, Tatikawa, Ikebukuro, Nihonbashi, Shibuya, Shinjyuku, Aoyama, Roppongi, Azabu, Sangenjyaya, Sasazuka.</p>
+        <p>I have been to bar and Izakaya Kiyose, Tokorozawa, Tatikawa, Ikebukuro, Nihonbashi, Shibuya, Shinjyuku, Aoyama, Roppongi, Azabu, Sangenjyaya, Sasazuka.</p>
       </div>
     </div>
   </div>

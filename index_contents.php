@@ -89,7 +89,7 @@ switch (true) {
 
           ?>
 
-          <p>finsh send<br /><a href="index.php">Back</a></p>
+          <p>finsh send<br /><a href="index.php">Home</a></p>
         </div>
       </div>
     </div>

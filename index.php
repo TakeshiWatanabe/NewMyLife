@@ -4,6 +4,36 @@ include("titleAndButton.php");
 
 ?>
 
+<?php
+// DBに接続
+$link = mysql_connect('localhost', 'root', 'take-c.w9');
+if (!$link) {
+    die('接続失敗です。'.mysql_error());
+}
+
+// テーブル選択
+$db_selected = mysql_select_db('NewMyLife', $link);
+if (!$db_selected){
+    die('データベース選択失敗です。'.mysql_error());
+}
+
+mysql_set_charset('utf8');
+
+// データ取得
+$result = mysql_query('SELECT name,contents,created FROM contents');
+if (!$result) {
+    die('クエリーが失敗しました。'.mysql_error());
+}
+
+// 
+$close_flag = mysql_close($link);
+
+if ($close_flag){
+    // print('<p>切断に成功しました。</p>');
+}
+
+
+?>
 
 
 <!DOCTYPE html>
@@ -69,8 +99,32 @@ include("titleAndButton.php");
   <div style="margin-top:30px">
     <div class="row">
       <div class="col-xs-8 col-md-offset-2 well">
+        <p class="letter"><font size="4">
+          
+          <?php
+          // 表示
+          while ($row = mysql_fetch_assoc($result)) {
+            echo('</p>');
+            echo($row['created']);
+            echo('</p>');
+            echo('Title：'.$row['name']);
+            echo('</p>');
+            echo('Contents：'.$row['contents']);
+            echo('</p>');
+            echo('-------------------------------------');
+            echo('</p>');
+          }
 
-        
+          // DBを切断
+          $close_flag = mysql_close($link);
+
+          if ($close_flag){
+              // print('<p>切断に成功しました。</p>');
+          }
+
+          ?>
+
+        </font></p>
       </div>
     </div>
   </div>
@@ -175,13 +229,13 @@ include("titleAndButton.php");
       <div style="margin-top:700px">
         <p class="footerLetter">
           <br></br>
-          <br></br> 
         </p>
         <div style="margin-left:400px">
+          <h2><font size="5" color="#000000">Question</font></h2>
           <form action="" method="POST">
             <p><font size="4" color="#000000">Name</font></p>
           <input type="text" name="name" id="name" maxlength="20" value="" required><br><br/>
-            <p><font size="4" color="#000000">Question</font></p><textarea name="comment" col="40" row="5"></textarea><br><br/>
+            <p><font size="4" color="#000000">Comment</font></p><textarea name="comment" col="40" row="5"></textarea><br><br/>
             <p><font size="4" color="#000000"><span style="margin-right: 4em;"></span><input type="submit" value="OK"></font></p>
           </form>
         </div>
