@@ -60,6 +60,21 @@ include("titleAndButton.php");
     </div>
   </div>
 
+  <!--contents-->
+  <div style="margin-top:150px">
+    <div style="text-align:center">
+      <p class="letter"><font size="6">Article</font></p>
+    </div>
+  </div>
+  <div style="margin-top:30px">
+    <div class="row">
+      <div class="col-xs-8 col-md-offset-2 well">
+
+        
+      </div>
+    </div>
+  </div>
+
   <!--plofile-->
   <div style="margin-top:150px">
     <div style="text-align:center">
@@ -70,14 +85,13 @@ include("titleAndButton.php");
     <div class="row">
       <div class="col-xs-8 col-md-offset-2 well">
         <div style="text-align:center">
-          
         </div>
         <font size="4">
           <li>Name : Takeshi Watanabe</li>
           <li>Country : from Tokyo</li>
           <li>Birthday : January 13, 1986</li>
           <li>Age : 29</li>
-          <li>Living : Setagaya in Tokyo</li>
+          <li>Living : Tokyo</li>
         </font>
         <div style="text-align:right">
           <button type="button" class="btn btn-warning">
@@ -97,7 +111,6 @@ include("titleAndButton.php");
         <a href="../NewMyLife/hobby.php">other hobby</a>
       </button>
     </div>
-
     <figure class="gazo-box">
       <div style="margin-left:210px">
         <div style="margin-top:50px">
@@ -132,7 +145,6 @@ include("titleAndButton.php");
         <a href="../NewMyLife/photo.php">other photo</a>
       </button>
     </div>
-
     <figure class="gazo-box">
       <div style="margin-left:210px">
         <div style="margin-top:50px">
@@ -158,6 +170,7 @@ include("titleAndButton.php");
       </div>
     </figure>
 
+    <!--footer-->
     <footer>
       <div style="margin-top:700px">
         <p class="footerLetter">
@@ -174,9 +187,7 @@ include("titleAndButton.php");
         </div>
         <div style="margin-left:800px">
           <font size="3">
-            <a>企業理念</a></br>
-            <a>(タイトル)とは</a></br>
-            <a>利用規約とプライバシーポリシー<a/>
+            
           </font>
         </div>
       </div>

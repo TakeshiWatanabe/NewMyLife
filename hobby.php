@@ -124,6 +124,23 @@ include("titleAndButton.php");
       </div>
     </div>
   </div>
+
+  <div class="row">
+    <div style="margin-top:40px">
+      <div class="col-md-2 col-md-offset-2">
+        <img src="hobbyImg/IMG_0657.jpg" width="400" height="400">
+        <figcaption>
+          <div style="margin-left:0px"><font size="4">Sungrase</font></div>
+        </figcaption>
+      </div>
+    </div>
+    <div style="margin-top:150px">
+      <div class="col-md-4 col-md-offset-2 well">
+        <h2>Like fashion</h2>
+        <p>I like a lot of fashion brand Ray Ban, CAZAL, DIESEL, GAP, BEAMS, H&M, ZARA, NIKE, adidas, New Balance, Ron Herman, LOVELESS, and more </p>
+      </div>
+    </div>
+  </div>
   
   <?php
   // footer

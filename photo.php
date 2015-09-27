@@ -89,10 +89,10 @@ include("titleAndButton.php");
 	  	</figure>
 	  	<figure class="gazo-box">
 	    	<div style="margin-top:50px">
-	      		<li><a href="../NewMyLife/photoOnly.php"><img src="http://egao.inforent.jp/img//1532fb1291ae450fb82526f9bbe43ee7.jpg" width="500" height="213"></a></li>
+	      		<li><a href="../NewMyLife/photoOnly.php"><img src="hobbyImg/IMG_1202.JPG" width="500" height="213"></a></li>
 		      	<figcaption>
-		        	<div style="margin-left:0px"><font size="4">2015.6.21 エンジニアBBQ</font></div>
-		        	<p>写真枚数 23 枚</p>
+		        	<div style="margin-left:0px"><font size="4">Cebu in Philippines</font></div>
+		        	<p>pic 23 scrap</p>
 		      	</figcaption>
 	    	</div>
 	  	</figure>
@@ -100,8 +100,8 @@ include("titleAndButton.php");
 		    <div style="margin-top:20px">
 		      	<li><a href="../shareHouse/photoOnly.php"><img src="http://ritter-school.sakura.ne.jp/wwp/wp-content/uploads/2015/01/image004.jpg" width="500" height="213"></a></li>
 		      	<figcaption>
-		        	<div style="margin-left:0px"><font size="4">2015.4.2　お花見</font></div>
-		        	<p>写真枚数　18 枚</p>
+		        	<div style="margin-left:0px"><font size="4">Taiwan</font></div>
+		        	<p>pic　18 scrap</p>
 		      	</figcaption>
 		    </div>
 		</figure>

@@ -25,9 +25,7 @@
         </div>
         <div style="margin-left:800px">
           <font size="3">
-            <a>企業理念</a></br>
-            <a>(タイトル)とは</a></br>
-            <a>利用規約とプライバシーポリシー<a/>
+            
           </font>
         </div>
       </div>

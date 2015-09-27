@@ -32,12 +32,12 @@ include("titleAndButton.php");
   <!--plofile-->
   <div style="margin-top:30px">
     <div class="row">
-      <div class="col-xs-8 col-md-offset-2 well">
+      <div class="col-xs-6 col-md-offset-3 well">
         <div style="text-align:center">
         </div>
         <font size="4">
           <li>Name : Takeshi Watanabe</li>
-          <li>Country : Tokyo in Japan</li>
+          <li>Country : Japan</li>
           <li>Birthday : January 13, 1986</li>
           <li>Age : 29</li>
           <li>Living : Tokyo</li>
