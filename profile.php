@@ -41,13 +41,13 @@ include("titleAndButton.php");
           <li>Birthday : January 13, 1986</li>
           <li>Age : 29</li>
           <li>Living : Tokyo</li>
-          <li>School : Tanashi industry higt school, Nex Seed</li>
+          <li>School : Tanashi industry higt school, NexSeed</li>
           <li>Study : English, Programming</li>
           <li>language : Japanses, English</li>
           <li>Programming language : PHP, HTML, CSS, SQL, Objective-C</li>
-          <li>Experience work : Watanabe architecture</li>
+          <li>Past company : Watanabe architecture (ceo, and worker)</li>
+          <li>Present company : mayplesystems (programmer)</li>
           <li>Like : music, travel, snowboard, alcohol drinks, gym, cycling and party</li>
-          <li></li>
 
         </font>
       </div>

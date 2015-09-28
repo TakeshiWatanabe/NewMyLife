@@ -20,7 +20,7 @@ include("titleAndButton.php");
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <title>main</title>
 <link rel="stylesheet" href="../NewMyLife/bootstrap-3.3.4-dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="../NewMyLife/bootstrap-3.3.4-dist/css/test.css">
@@ -31,11 +31,21 @@ include("titleAndButton.php");
 </head>
 <body>
 
-	<div style="margin-top:150px">
-      <p class="letter"><font size="6">You sent a comment to me<br />Thank you</font></p>    
-    </div>
-    <div style="text-align:center">
-		<p><font size="5"><br /><a href="index.php">Home</a></font></p>
+<div style="margin-top:100px">
+	<div style="text-align:center">
+		<p><font size="5"><?php echo('</p>'); echo("\nName：\n" . $_POST['name']); echo('</p>'); echo("\nE-mail：\n" . $_POST['e-mail']); echo('</p>'); echo("\nComment：\n" . $_POST['comment']); ?></font></p>
 	</div>
+</div>
+
+<div style="margin-top:150px">
+	<div style="text-align:center">
+  		<h2>You sent a comment to me<br />Thank you</h2>    
+	</div>
+</div>
+<div style="text-align:center">
+	<p><font size="5"><br /><a href="index.php">Home</a></font></p>
+</div>
+
+
 </body>
 </html>

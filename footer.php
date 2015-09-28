@@ -12,22 +12,23 @@
 <!--footer-->
 <footer>
   <div style="margin-top:100px">
-    <br></br>
-      <div style="margin-left:400px">
-        <h2><font size="5" color="#000000">Question</font></h2>
-        <form action="send.php" method="post">
-          <font size="4" color="#000000">Name：<br /></font>
+    <div style="margin-left:300px">
+      <h2><font size="5" color="#000000">Question</font></h2>
+      <form action="send.php" method="post">
+        <font size="4" color="#000000">
+          Name：<br />
           <input type="text" name="name" size="30" value="" /><br />
-          <font size="4" color="#000000">E-mail：<br /></font>
+          E-mail：<br />
           <input type="text" name="mail" size="30" value="" /><br />
-          <font size="4" color="#000000">Comment：<br /></font>
+          Comment：<br />
           <textarea name="message" cols="30" rows="5"></textarea><br />
           <br />
-          <font size="4" color="#000000"><input type="submit" value="Send" /></font>
-        </form>
-      </div>    
-    </div>
-  </footer>
+          <input type="submit" value="Send" />
+        </font>
+      </form>
+    </div>    
+  </div>
+</footer>
 
   
 </body>

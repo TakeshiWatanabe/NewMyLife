@@ -93,7 +93,7 @@ if ($close_flag){
   <!--contents-->
   <div style="margin-top:150px">
     <div style="text-align:center">
-      <p class="letter"><font size="6">Article</font></p>
+      <p class="letter"><font size="6">Information</font></p>
     </div>
   </div>
   <div style="margin-top:30px">
@@ -228,23 +228,23 @@ if ($close_flag){
     <!--footer-->
     <footer>
       <div style="margin-top:700px">
-        <br></br>
-        <div style="margin-left:400px">
+        <div style="margin-left:300px">
           <h2><font size="5" color="#000000">Question</font></h2>
           <form action="send.php" method="post">
-            <font size="4" color="#000000">Name：<br /></font>
-            <input type="text" name="name" size="30" value="" /><br />
-            <font size="4" color="#000000">E-mail：<br /></font>
-            <input type="text" name="mail" size="30" value="" /><br />
-            <font size="4" color="#000000">Comment：<br /></font>
-            <textarea name="message" cols="30" rows="5"></textarea><br />
-            <br />
-            <font size="4" color="#000000"><input type="submit" value="Send" /></font>
+            <font size="4" color="#000000">
+              Name：<br />
+              <input type="text" name="name" size="30" value="" /><br />
+              E-mail：<br />
+              <input type="text" name="mail" size="30" value="" /><br />
+              Comment：<br />
+              <textarea name="message" cols="30" rows="5"></textarea><br />
+              <br />
+              <input type="submit" value="Send" />
+            </font>
           </form>
         </div>    
       </div>
     </footer>
-
 
 </body>
 </html>
