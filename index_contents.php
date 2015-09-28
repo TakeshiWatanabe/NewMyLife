@@ -15,12 +15,12 @@ switch (true) {
 header('Content-Type: text/html; charset=utf-8');
 
 // conect DB
-$db = mysql_connect('localhost', 'root', 'take-c.w9');
+$db = mysql_connect('mysql414.db.sakura.ne.jp', 'takeshi-w', 'take-cw99');
           if (!$db) {
             exit('データベースに接続できません。');
           }
 
-          $result = mysql_select_db('NewMyLife', $db);
+          $result = mysql_select_db('takeshi-w_new_my_life', $db);
           if (!$result) {
             exit('データベースを選択できません。');
           }

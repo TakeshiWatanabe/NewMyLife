@@ -102,6 +102,7 @@ if ($close_flag){
         <p class="letter"><font size="4">
           
           <?php
+
           // 表示
           while ($row = mysql_fetch_assoc($result)) {
             echo('</p>');
@@ -119,7 +120,7 @@ if ($close_flag){
           $close_flag = mysql_close($link);
 
           if ($close_flag){
-              // print('<p>切断に成功しました。</p>');
+          // print('<p>切断に成功しました。</p>');
           }
 
           ?>

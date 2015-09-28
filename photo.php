@@ -98,7 +98,7 @@ include("titleAndButton.php");
 	  	</figure>
 	  	<figure class="gazo-box">
 		    <div style="margin-top:20px">
-		      	<li><a href="../shareHouse/photoOnly.php"><img src="http://ritter-school.sakura.ne.jp/wwp/wp-content/uploads/2015/01/image004.jpg" width="500" height="213"></a></li>
+		      	<li><a href="../NewMyLife/photoOnly.php"><img src="friends.jpg" width="500" height="213"></a></li>
 		      	<figcaption>
 		        	<div style="margin-left:0px"><font size="4">Taiwan</font></div>
 		        	<p>pic　18 scrap</p>
