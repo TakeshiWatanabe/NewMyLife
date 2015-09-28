@@ -16,36 +16,36 @@ header('Content-Type: text/html; charset=utf-8');
 
 // conect DB
 $db = mysql_connect('mysql414.db.sakura.ne.jp', 'takeshi-w', 'take-cw99');
-          if (!$db) {
-            exit('データベースに接続できません。');
-          }
+if (!$db) {
+  exit('データベースに接続できません。');
+}
 
-          $result = mysql_select_db('takeshi-w_new_my_life', $db);
-          if (!$result) {
-            exit('データベースを選択できません。');
-          }
+$result = mysql_select_db('takeshi-w_new_my_life', $db);
+if (!$result) {
+  exit('データベースを選択できません。');
+}
 
-          $resultCord = mysql_query('SET NAMES utf8', $db);
-          if (!$resultCord) {
-            exit('文字コードを指定できません。');
-          }
+$resultCord = mysql_query('SET NAMES utf8', $db);
+if (!$resultCord) {
+  exit('文字コードを指定できません。');
+}
 
-          $id = $_POST['id'];
-          $name = $_POST['name'];
-          $contents = $_POST['contents'];
-          // $eMail = $_POST['eMail'];
-          // $comment = $_POST['comment'];
+$id = $_POST['id'];
+$name = $_POST['name'];
+$contents = $_POST['contents'];
+// $eMail = $_POST['eMail'];
+// $comment = $_POST['comment'];
           
-          $sql = "INSERT INTO contents(id,name,created,contents) VALUES ('$id', '$name', NOW(), '$contents')";
-          $result = mysql_query($sql);
-          if (!$result) {
-            exit('データを登録できませんでした。');
-          }
+$sql = "INSERT INTO contents(id,name,created,contents) VALUES ('$id', '$name', NOW(), '$contents')";
+$result = mysql_query($sql);
+if (!$result) {
+  exit('データを登録できませんでした。');
+}
 
-          $db = mysql_close($db);
-          if (!$db) {
-            exit('データベースとの接続を閉じられませんでした。');
-          }
+$db = mysql_close($db);
+if (!$db) {
+  exit('データベースとの接続を閉じられませんでした。');
+}
 
 ?>
 
@@ -75,7 +75,7 @@ $db = mysql_connect('mysql414.db.sakura.ne.jp', 'takeshi-w', 'take-cw99');
     <div class="row">
       <div class="col-xs-8 col-md-offset-2 well">
         <div style="text-align:center">
-          <form method="POST" action="<?php echo($_SERVER['contents']) ?>">
+          <form method="POST" action="<?php echo($_SERVER['contents']); ?>">
             <p><font size="4" color="#000000">Title</font></p>
             <input type="text" name="name"><br><br>
             <p><font size="4" color="#000000">Contents</font></p>
