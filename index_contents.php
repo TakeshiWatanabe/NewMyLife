@@ -4,17 +4,49 @@ include("titleAndButton.php");
 
 // basic certification
 switch (true) {
-              case !isset($_SERVER['PHP_AUTH_USER'], $_SERVER['PHP_AUTH_PW']):
-              case $_SERVER['PHP_AUTH_USER'] !== 'Takeshi':
-              case $_SERVER['PHP_AUTH_PW']   !== 'take-c.w9':
-                  header('WWW-Authenticate: Basic realm="Enter username and password."');
-                  header('Content-Type: text/plain; charset=utf-8');
-                  die('You need write password');
+  case !isset($_SERVER['PHP_AUTH_USER'], $_SERVER['PHP_AUTH_PW']):
+  case $_SERVER['PHP_AUTH_USER'] !== 'Takeshi':
+  case $_SERVER['PHP_AUTH_PW']   !== 'take-c.w9':
+  header('WWW-Authenticate: Basic realm="Enter username and password."');
+  header('Content-Type: text/plain; charset=utf-8');
+  die('You need write password');
+}
+
+header('Content-Type: text/html; charset=utf-8');
+
+// conect DB
+$db = mysql_connect('localhost', 'root', 'take-c.w9');
+          if (!$db) {
+            exit('データベースに接続できません。');
           }
 
-          header('Content-Type: text/html; charset=utf-8');
+          $result = mysql_select_db('NewMyLife', $db);
+          if (!$result) {
+            exit('データベースを選択できません。');
+          }
+
+          $resultCord = mysql_query('SET NAMES utf8', $db);
+          if (!$resultCord) {
+            exit('文字コードを指定できません。');
+          }
+
+          $id = $_POST['id'];
+          $name = $_POST['name'];
+          $contents = $_POST['contents'];
+          
+          $sql = "INSERT INTO contents(id,name,created,contents) VALUES ('$id', '$name', NOW(), '$contents')";
+          $result = mysql_query($sql);
+          if (!$result) {
+            exit('データを登録できませんでした。');
+          }
+
+          $db = mysql_close($db);
+          if (!$db) {
+            exit('データベースとの接続を閉じられませんでした。');
+          }
 
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -52,39 +84,10 @@ switch (true) {
 
           <?php
 
-          $db = mysql_connect('localhost', 'root', 'take-c.w9');
-          if (!$db) {
-            exit('データベースに接続できません。');
-          }
-
-          $result = mysql_select_db('NewMyLife', $db);
-          if (!$result) {
-            exit('データベースを選択できません。');
-          }
-
-          $resultCord = mysql_query('SET NAMES utf8', $db);
-          if (!$resultCord) {
-            exit('文字コードを指定できません。');
-          }
-
-          $id = $_POST['id'];
-          $name = $_POST['name'];
-          $contents = $_POST['contents'];
-          
-          $sql = "INSERT INTO contents(id,name,created,contents) VALUES ('$id', '$name', NOW(), '$contents')";
-          $result = mysql_query($sql);
-          if (!$result) {
-            exit('データを登録できませんでした。');
-          }
-
-          $db = mysql_close($db);
-          if (!$db) {
-            exit('データベースとの接続を閉じられませんでした。');
-          }
-
           // express
-          echo('<p>Title:'.$name.'</p>');
-          echo('<p>Contents:</p>');
+          echo('<p>Title</p>');
+          echo('<p>'.$name.'</p>');
+          echo('<p>Contents</p>');
           echo('<p>'.$contents.'</p>');
 
           ?>

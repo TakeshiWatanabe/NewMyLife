@@ -19,13 +19,13 @@ if (!$db_selected){
 
 mysql_set_charset('utf8');
 
-// データ取得
-$result = mysql_query('SELECT name,contents,created FROM contents');
+// データ取得＋最新順に取得
+$result = mysql_query('SELECT name,contents,created FROM contents ORDER BY id DESC');
 if (!$result) {
     die('クエリーが失敗しました。'.mysql_error());
 }
 
-// 
+// 接続切断
 $close_flag = mysql_close($link);
 
 if ($close_flag){
