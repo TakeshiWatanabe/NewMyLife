@@ -49,10 +49,10 @@
             <span class="glyphicon glyphicon-picture" aria-hidden="true"></span>
             <a href="../NewMyLife/photo.php">Photo</a>
           </button>
-          <button type="button" class="btn btn-default btn-lg">
+          <!-- <button type="button" class="btn btn-default btn-lg">
             <span class="glyphicon glyphicon-film" aria-hidden="true"></span>
             <a href="../NewMyLife/.php">Background</a>
-          </button>
+          </button> -->
         </p>
       </div>
     </div>

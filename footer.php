@@ -12,25 +12,23 @@
 <!--footer-->
 <footer>
   <div style="margin-top:100px">
-    <p class="footerLetter">
-      <br></br>
-    </p>
-    <div style="margin-left:400px">
-      <h2><font size="5" color="#000000">Question</font></h2>
-      <form action="w.takeshi9@gmail.com" method="POST">
-        <p><font size="4" color="#000000">Name</font></p>
-        <input type="text" name="name" id="name" maxlength="20" value="" required><br><br/>
-        <p><font size="4" color="#000000">Comment</font></p><textarea name="comment" col="40" row="5"></textarea><br><br/>
-        <p><font size="4" color="#000000"><span style="margin-right: 4em;"></span><input type="submit" value="OK"></font></p>
-      </form>
+    <br></br>
+      <div style="margin-left:400px">
+        <h2><font size="5" color="#000000">Question</font></h2>
+        <form action="send.php" method="post">
+          <font size="4" color="#000000">Name：<br /></font>
+          <input type="text" name="name" size="30" value="" /><br />
+          <font size="4" color="#000000">E-mail：<br /></font>
+          <input type="text" name="mail" size="30" value="" /><br />
+          <font size="4" color="#000000">Comment：<br /></font>
+          <textarea name="message" cols="30" rows="5"></textarea><br />
+          <br />
+          <font size="4" color="#000000"><input type="submit" value="Send" /></font>
+        </form>
+      </div>    
     </div>
-        <!-- <div style="margin-left:800px">
-          <font size="3">
-            
-          </font>
-        </div> -->
-  </div>
-</footer>
+  </footer>
 
+  
 </body>
 </html>

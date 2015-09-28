@@ -33,6 +33,8 @@ $db = mysql_connect('mysql414.db.sakura.ne.jp', 'takeshi-w', 'take-cw99');
           $id = $_POST['id'];
           $name = $_POST['name'];
           $contents = $_POST['contents'];
+          $eMail = $_POST['eMail'];
+          $comment = $_POST['comment'];
           
           $sql = "INSERT INTO contents(id,name,created,contents) VALUES ('$id', '$name', NOW(), '$contents')";
           $result = mysql_query($sql);
