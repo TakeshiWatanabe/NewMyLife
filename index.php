@@ -39,7 +39,7 @@ if ($close_flag){
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <title>main</title>
 <link rel="stylesheet" href="../NewMyLife/bootstrap-3.3.4-dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="../NewMyLife/bootstrap-3.3.4-dist/css/test.css">
@@ -235,9 +235,9 @@ if ($close_flag){
               Name：<br />
               <input type="text" name="name" size="30" value="" /><br />
               E-mail：<br />
-              <input type="text" name="mail" size="30" value="" /><br />
+              <input type="text" name="eMail" size="30" value="" /><br />
               Comment：<br />
-              <textarea name="message" cols="30" rows="5"></textarea><br />
+              <textarea name="comment" cols="30" rows="5"></textarea><br />
               <br />
               <input type="submit" value="Send" />
             </font>

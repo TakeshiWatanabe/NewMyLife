@@ -1,4 +1,5 @@
 <?php
+
 // titole and button
 include("titleAndButton.php");
 
@@ -10,6 +11,7 @@ switch (true) {
   header('WWW-Authenticate: Basic realm="Enter username and password."');
   header('Content-Type: text/plain; charset=utf-8');
   die('You need write password');
+
 }
 
 header('Content-Type: text/html; charset=utf-8');
@@ -46,7 +48,7 @@ $db = mysql_close($db);
 if (!$db) {
   exit('データベースとの接続を閉じられませんでした。');
 }
-
+// var_dump("1");
 ?>
 
 
@@ -70,7 +72,7 @@ if (!$db) {
     </div>
   </div>
 
-  <!--sent contents-->
+  <!--send contents-->
   <div style="margin-top:50px">
     <div class="row">
       <div class="col-xs-8 col-md-offset-2 well">
@@ -100,7 +102,7 @@ if (!$db) {
     </div>
   </div>
 
-  <!--Photo-->
+  <!--send photo-->
   <div style="margin-top:150px">
     <div style="text-align:center">
       <p class="letter"><font size="6">Photo</font></p>
